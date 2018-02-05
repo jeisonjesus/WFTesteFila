@@ -63,6 +63,7 @@ namespace WFTesteFila
 
                 MessageQueue[] filas = MessageQueue.GetPrivateQueuesByMachine("localhost");
 
+
                 foreach (MessageQueue fila in filas)
                 {
                     TreeNode qNode = new TreeNode();

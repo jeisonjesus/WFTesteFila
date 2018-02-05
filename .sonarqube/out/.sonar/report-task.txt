@@ -1,0 +1,6 @@
+projectKey=WFTesteFila
+serverUrl=http://mga-scrumbpo:9000
+serverVersion=6.7.1.35068
+dashboardUrl=http://mga-scrumbpo:9000/dashboard/index/WFTesteFila
+ceTaskId=AWFlnL3TIARaBw5yhv2A
+ceTaskUrl=http://mga-scrumbpo:9000/api/ce/task?id=AWFlnL3TIARaBw5yhv2A
