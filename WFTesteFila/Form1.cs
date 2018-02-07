@@ -63,6 +63,8 @@ namespace WFTesteFila
 
                 MessageQueue[] filas = MessageQueue.GetPrivateQueuesByMachine("localhost");
 
+                //isso é um tste e não posso perder este comentario após nova branch
+
 
                 foreach (MessageQueue fila in filas)
                 {
