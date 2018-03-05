@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Messaging;
 using System.IO;
@@ -36,10 +29,12 @@ namespace WFTesteFila
             }
             mQ.Send(textoMsg, "TesteFila");
             lstMSMQ.Items.Add(string.Format("Msg::>Mensagem enviada para a fila. {0}", DateTime.Now.TimeOfDay.ToString()));
+            if (textoMsg == "")
+                MessageBox.Show("");
         }
 
         private void btnLer_Click(object sender, EventArgs e)
-        {
+        {asdfasdfasdfasdfasdf
             string texto;
             try
             {
@@ -63,20 +58,26 @@ namespace WFTesteFila
 
                 MessageQueue[] filas = MessageQueue.GetPrivateQueuesByMachine("localhost");
 
+                //isso é um tste e não posso perder este comentario após nova branch
+
 
                 foreach (MessageQueue fila in filas)
                 {
-                    TreeNode qNode = new TreeNode();
-                    qNode.Text = fila.QueueName;
-                    qNode.Tag = "Fila";
+                    TreeNode qNode = new TreeNode
+                    {
+                        Text = fila.QueueName,
+                        Tag = "Fila"
+                    };
 
                     treeView1.Nodes.Add(qNode);
 
                     foreach (System.Messaging.Message m in fila)
                     {
-                        TreeNode mNode = new TreeNode();
-                        mNode.Tag = "Msg";
-                        mNode.Text = m.Label;
+                        TreeNode mNode = new TreeNode
+                        {
+                            Tag = "Msg",
+                            Text = m.Label
+                        };
                         treeView1.Nodes[Array.IndexOf(filas, fila)].Nodes.Add(mNode);
                     }
                 }
