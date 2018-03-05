@@ -34,7 +34,7 @@ namespace WFTesteFila
         }
 
         private void btnLer_Click(object sender, EventArgs e)
-        {
+        {asdfasdfasdfasdfasdf
             string texto;
             try
             {
