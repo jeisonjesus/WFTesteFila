@@ -34,7 +34,7 @@ namespace WFTesteFila
         }
 
         private void btnLer_Click(object sender, EventArgs e)
-        {asdfasdfasdfasdfasdf
+        {
             string texto;
             try
             {
@@ -58,9 +58,6 @@ namespace WFTesteFila
 
                 MessageQueue[] filas = MessageQueue.GetPrivateQueuesByMachine("localhost");
 
-                //isso é um tste e não posso perder este comentario após nova branch
-
-
                 foreach (MessageQueue fila in filas)
                 {
                     TreeNode qNode = new TreeNode
@@ -71,12 +68,12 @@ namespace WFTesteFila
 
                     treeView1.Nodes.Add(qNode);
 
-                    foreach (System.Messaging.Message m in fila)
+                    foreach (System.Messaging.Message message in fila)
                     {
                         TreeNode mNode = new TreeNode
                         {
                             Tag = "Msg",
-                            Text = m.Label
+                            Text = message.Label
                         };
                         treeView1.Nodes[Array.IndexOf(filas, fila)].Nodes.Add(mNode);
                     }
@@ -85,7 +82,7 @@ namespace WFTesteFila
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Erro");
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
