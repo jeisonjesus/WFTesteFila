@@ -1,15 +1,16 @@
 echo Chamando Sonar...
-
+pause
 cd D:\OneDrive\Benner\Visual Studio 2015\Projects\WFTesteFila
-
+pause
 echo Excluindo diretorio sonar...
 rmdir "D:\OneDrive\Benner\Visual Studio 2015\Projects\WFTesteFila\.sonarqube" /s /q
-
+pause
 echo Chamando Sonar...
 MSBuild.SonarQube.Runner.exe begin /key:WFTesteFila /name:"WFTesteFila" /version:1.0
-
+pause
 echo Executando Build...
 "C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" WFTesteFila.sln /t:Rebuild
-
+pause
 echo Encerrando Sonar...
 MSBuild.SonarQube.Runner.exe end
+pause
