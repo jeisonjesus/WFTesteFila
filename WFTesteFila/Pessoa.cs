@@ -12,6 +12,18 @@ namespace WFTesteFila
 
         public string Nome { get; set; }
 
-       public DateTime Aniversario { get; set; }
+        public DateTime Aniversario { get; set; }
+
+        public void Salvar()
+        {
+            if (Nome == "João")
+            {
+
+            }
+            else
+            {
+                Nome = "João da Silva";
+            }
+        }
     }
 }
