@@ -611,7 +611,7 @@ MessageBoxUU 
 }VV 
 }WW 	
 }XX 
-}YY †
+}YY î	
 PD:\OneDrive\Benner\Visual Studio 2015\Projects\WFTesteFila\WFTesteFila\Pessoa.cs
 	namespace 	
 WFTesteFila
@@ -658,17 +658,39 @@ PD:\OneDrive\Benner\Visual Studio 2015\Projects\WFTesteFila\WFTesteFila\Pessoa.c
 set" %
 ;% &
 }' (
-public 
-DateTime 
-Aniversario "
-{# $
-get% (
-;( )
-set* -
-;- .
-}/ 0
-} 
-} Ò
+public 
+DateTime 
+Aniversario #
+{$ %
+get& )
+;) *
+set+ .
+;. /
+}0 1
+public 
+void 
+Salvar 
+( 
+) 
+{ 	
+if 
+( 
+Nome 
+== 
+$str 
+) 
+{ 
+} 
+else 
+{ 
+Nome 
+= 
+$str &
+;& '
+} 
+} 	
+} 
+} Ò
 QD:\OneDrive\Benner\Visual Studio 2015\Projects\WFTesteFila\WFTesteFila\Program.cs
 	namespace 	
 WFTesteFila

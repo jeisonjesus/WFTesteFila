@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SonarQube", "SonarQube", "{415D4DE4-B635-4B2C-B1C8-273A0D63B360}"
 	ProjectSection(SolutionItems) = preProject
 		SonarQube\SolutionBinding.sqconfig = SonarQube\SolutionBinding.sqconfig
+		SonarQube\WFTesteFila_masterCSharp.ruleset = SonarQube\WFTesteFila_masterCSharp.ruleset
 		SonarQube\WFTesteFilaCSharp.ruleset = SonarQube\WFTesteFilaCSharp.ruleset
 	EndProjectSection
 EndProject
