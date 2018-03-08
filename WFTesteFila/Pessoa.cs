@@ -18,9 +18,11 @@ namespace WFTesteFila
         {
             get
             {
-                return Nome + SobreNome;
+                return $"{Nome} {SobreNome}";
             }
         }
+
+
 
         public DateTime Aniversario { get; set; }
 
