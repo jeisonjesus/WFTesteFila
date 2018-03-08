@@ -14,13 +14,17 @@ namespace WFTesteFila
 
         public DateTime Aniversario { get; set; }
 
+        public int Idade
+        {
+            get
+            {
+                return Convert.ToInt32(DateTime.Now.Subtract(Aniversario).TotalDays / 365);
+            }
+        }
+
         public void Salvar()
         {
             if (Nome == "João")
-            {
-
-            }
-            else
             {
                 Nome = "João da Silva";
             }
