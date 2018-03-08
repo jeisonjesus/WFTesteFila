@@ -12,6 +12,16 @@ namespace WFTesteFila
 
         public string Nome { get; set; }
 
+        public string SobreNome { get; set; }
+
+        public string NomeCompleto
+        {
+            get
+            {
+                return Nome + SobreNome;
+            }
+        }
+
         public DateTime Aniversario { get; set; }
 
         public int Idade
