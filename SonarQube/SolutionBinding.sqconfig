@@ -1,7 +1,7 @@
 {
   "ServerUri": "http://mga-scrumbpo:9000/",
   "Organization": null,
-  "ProjectKey": "WFTesteFila:master",
+  "ProjectKey": "WFTesteFila",
   "Profiles": {
     "CSharp": {
       "ProfileKey": "AWFIbJB-5DwfK6bwwjvv",
