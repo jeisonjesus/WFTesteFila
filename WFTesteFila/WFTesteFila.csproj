@@ -134,6 +134,11 @@
     <Analyzer Include="..\packages\SonarAnalyzer.CSharp.6.7.1.4347\analyzers\SonarAnalyzer.CSharp.dll" />
     <Analyzer Include="..\packages\SonarAnalyzer.CSharp.6.7.1.4347\analyzers\SonarAnalyzer.dll" />
   </ItemGroup>
+	<ItemGroup>
+	  <SonarQubeSetting Include="sonar.stylecop.projectFilePath">
+		<Value>$(MSBuildProjectFullPath)</Value>
+	  </SonarQubeSetting>
+	</ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
