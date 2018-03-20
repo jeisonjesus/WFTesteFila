@@ -85,5 +85,11 @@ namespace WFTesteFila
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string valor = "x";
+            MessageBox.Show(Convert.ToDecimal(valor).ToString());
+        }
     }
 }
